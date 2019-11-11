@@ -1,0 +1,10 @@
+@import './mixins/_fixedCover.sass'
+    
+/* Removes background so that everything lays over the background image */
+*
+    background: none
+    
+/* Cover uses a mixin to center this image. Mixin imported @ start of file  */
+.cover
+   +fixedCover(#{"~src/assets/images/limesCilantro.jpg"})
+
